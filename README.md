@@ -3,7 +3,7 @@
 ![五十嵐響子](https://pbs.twimg.com/media/CL-g-97UcAANZhA.png)
 
 ## Install
-* `sudo apt-get install imagemagick`
+* `sudo apt-get install imagemagick libmagickwand-dev`
 * `pip install -r requirements.txt`
 
 ## Set Up
@@ -11,9 +11,9 @@
 * write the key into `.env` (like `.env.sample`)
 
 ## Run
-* `./kyoko.sh`
+* `python kyoko.py`
 
 ## TODO
-* sort lines (using y coordinate)
 * post to slack
+* error handling
 * dockerize
