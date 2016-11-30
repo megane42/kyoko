@@ -4,7 +4,7 @@ import ocr
 
 def format_text(text):
     u""" 各行頭が中黒になるよう整形する関数 """
-    return re.sub(u'\n(?!・)', u' ', text)
+    return re.sub(u'(?!^)・', u'\n・', text)
 
 if __name__ == "__main__":
     for filename in ['dest1.png', 'dest2.png', 'dest3.png', 'dest4.png', 'dest5.png']:

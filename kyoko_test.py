@@ -1,27 +1,13 @@
 # -*- coding: utf-8 -*-
 import kyoko
-import unittest
 
-class OcrTestCase(unittest.TestCase):
-    def setUp(self):
-        pass
-
-    def tearDown(self):
-        pass
-
-    def test_format_text(self):
-        test_data = (
-            u"・ブリの照リ焼き\n"
-            u"(2個)\n"
-            u"・シェフおすすめの旬野菜\n"
-            u"・キャベッとべーコンのシーザーサラダ"
-        )
-        expected = (
-            u"・ブリの照リ焼き (2個)\n"
-            u"・シェフおすすめの旬野菜\n"
-            u"・キャベッとべーコンのシーザーサラダ"
-        )
-        self.assertEqual(expected, kyoko.format_text(test_data))
-
-if __name__ == "__main__":
-    unittest.main()
+def test_format_text():
+    test_data = (
+        u"・ハンバーグチーズ焼きマスタードソース(1個)・チキン竜田揚げあら塩ソース(3個)・ブリの照リ焼き(2個)"
+    )
+    expected = (
+        u"・ハンバーグチーズ焼きマスタードソース(1個)\n"
+        u"・チキン竜田揚げあら塩ソース(3個)\n"
+        u"・ブリの照リ焼き(2個)"
+    )
+    assert kyoko.format_text(test_data) == expected
