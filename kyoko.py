@@ -14,7 +14,7 @@ def format_text(text):
 
 if __name__ == "__main__":
     URL = "http://www.cardenas.co.jp/shop/deli_weekly%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC.pdf"
-    # URL = "deli.pdf"
+    ## URL = "deli.pdf"
     with Image(filename=URL, resolution=600) as entire_img:
         # 月曜 : 0 ... 金曜 : 4
         i = date.today().weekday()
@@ -51,5 +51,13 @@ if __name__ == "__main__":
 
     load_dotenv('.env')
     slack = slackweb.Slack(url=os.environ.get('SLACK_URL'))
-    speech = main_menu + '\n---------------\n' + side_menu
-    slack.notify(text=speech)
+    speech = (
+        u'今日の献立はこちらです。ちゃんと野菜も選ばないとダメですよ？'
+        u'\n---------------\n'
+        u'*メインディッシュ*\n'
+        main_menu
+        u'\n---------------\n'
+        u'*サイドディッシュ*\n'
+        side_menu
+    )
+    slack.notify(text=speech, username=u'五十嵐響子', icon_url='https://raw.githubusercontent.com/megane42/kyoko/master/kyoko.jpg')
