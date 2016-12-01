@@ -1,10 +1,10 @@
 # Kyoko - DexeeDeli 新宿フロントタワー店 献立お知らせ bot
 
+![screen shot](./screenshot.jpg)
+
 ## About
 * Kyoko is a Slack bot who tells us today's menu of [DexeeDeli Kita Shinjuku](http://www.cardenas.co.jp/shop/dexee-deli/-dexee-diner-750.html).
 * Kyoko stands for "KYO no KOndate" (今日の献立: "today's menu" in Japanese).
-
-![screen shot](https://github.com/megane42/kyoko/blob/master/screenshot.jpg?raw=true)
 
 ## Set Up
 * `cp .env.sample .env`
@@ -33,4 +33,6 @@
 * error handling
 * change speech randomly
 
-![五十嵐響子](https://pbs.twimg.com/media/CL-g-97UcAANZhA.png)
+<p align="center">
+  <img src="https://pbs.twimg.com/media/CL-g-97UcAANZhA.png" width="250px">
+</p>
