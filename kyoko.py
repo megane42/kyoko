@@ -55,9 +55,9 @@ if __name__ == "__main__":
         u'今日の献立はこちらです。ちゃんと野菜も選ばないとダメですよ？'
         u'\n---------------\n'
         u'*メインディッシュ*\n'
-        main_menu
+    ) + main_menu + (
         u'\n---------------\n'
         u'*サイドディッシュ*\n'
-        side_menu
-    )
+    ) + side_menu
+
     slack.notify(text=speech, username=u'五十嵐響子', icon_url='https://raw.githubusercontent.com/megane42/kyoko/master/kyoko.jpg')
