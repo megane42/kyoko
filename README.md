@@ -6,6 +6,8 @@
 * Kyoko is a Slack bot who tells us today's menu of [DexeeDeli Kita Shinjuku](http://www.cardenas.co.jp/shop/dexee-deli/-dexee-diner-750.html).
 * Kyoko stands for "KYO no KOndate" (今日の献立: "today's menu" in Japanese).
 
+![screen shot](https://github.com/megane42/kyoko/blob/master/screenshot.jpg?raw=true)
+
 ## Set Up
 * `cp .env.sample .env`
 * `vim .env` and write:
@@ -23,7 +25,8 @@
 * `docker run --rm --env-file /path/to/.env megane42/kyoko`
 
 ## Run Periodically
-* Use cron. Kyoko does not have any mechanism to run periodically.
+* use cron
+    * Kyoko does not have any mechanism to run periodically
 
 ## Test
 * `py.test`
