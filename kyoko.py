@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 import re
+import os
+import slackweb
 from wand.image import Image
 from datetime   import date
+from dotenv     import load_dotenv
 
 import ocr
 
@@ -46,5 +49,7 @@ if __name__ == "__main__":
                 text      = ocr.extract_text(response.json())
                 side_menu = format_text(text)
 
-    print main_menu
-    print side_menu
+    load_dotenv('.env')
+    slack = slackweb.Slack(url=os.environ.get('SLACK_URL'))
+    speech = main_menu + '\n---------------\n' + side_menu
+    slack.notify(text=speech)

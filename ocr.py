@@ -3,11 +3,12 @@ import requests
 import os
 from dotenv import load_dotenv
 
-load_dotenv('.env')
-
 def call_ms_ocr(data, language='ja', detectOrientation=False) :
     u""" Microsoft Computer Vision API / OCR を呼び出す関数 """
+
+    load_dotenv('.env')
     KEY = os.environ.get('MS_COMPUTERVISION_API_KEY')
+
     return requests.post(
         'https://api.projectoxford.ai/vision/v1.0/ocr',
         params={'language': language, 'detectOrientation': detectOrientation},
