@@ -3,7 +3,7 @@
 ![screen shot](./screenshot.jpg)
 
 ## About
-* Kyoko is a Slack bot who tells us today's menu of [DexeeDeli Kita Shinjuku](http://www.cardenas.co.jp/shop/dexee-deli/-dexee-diner-750.html).
+* Kyoko is (unofficial) Slack bot who tells us today's menu of [DexeeDeli Kita Shinjuku](http://www.cardenas.co.jp/shop/dexee-deli/-dexee-diner-750.html).
 * Kyoko stands for "KYO no KOndate" (今日の献立: "today's menu" in Japanese).
 
 ## Set Up
@@ -29,10 +29,10 @@
 ## Test
 * `py.test`
 
-## TODO
-* error handling
-* change speech randomly
+- - - -
 
 <p align="center">
-  <img src="https://pbs.twimg.com/media/CL-g-97UcAANZhA.png" width="250px">
+  <a href="https://www.google.co.jp/search?q=五十嵐響子" target=_blank>
+    <img src="https://pbs.twimg.com/media/CL-g-97UcAANZhA.png" width="250px">
+  </a>
 </p>
