@@ -1,6 +1,4 @@
-# Kyoko - DexeeDeli 新宿フロントタワー店の今日の献立お知らせ bot
-
-![五十嵐響子](https://pbs.twimg.com/media/CL-g-97UcAANZhA.png)
+# Kyoko - DexeeDeli 新宿フロントタワー店 献立お知らせ bot
 
 ## About
 * Kyoko is a Slack bot who tells us today's menu of [DexeeDeli Kita Shinjuku](http://www.cardenas.co.jp/shop/dexee-deli/-dexee-diner-750.html).
@@ -34,3 +32,5 @@
 ## TODO
 * error handling
 * change speech randomly
+
+![五十嵐響子](https://pbs.twimg.com/media/CL-g-97UcAANZhA.png)
