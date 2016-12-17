@@ -11,6 +11,7 @@
 * `vim .env` and write:
     * [Microsoft Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) key
     * Slack Incoming Webhook URL
+* Set icon and bot name from Slack web page
 
 ## Run Natively
 * install requirements:
@@ -29,10 +30,10 @@
 ## Test
 * `py.test`
 
-- - - -
+## Author
+* megane42
+    * https://github.com/megane42
+    * https://twitter.com/tsdnm
 
-<p align="center">
-  <a href="https://www.google.co.jp/search?q=五十嵐響子" target=_blank>
-    <img src="https://pbs.twimg.com/media/CL-g-97UcAANZhA.png" width="250px">
-  </a>
-</p>
+## License
+* MIT

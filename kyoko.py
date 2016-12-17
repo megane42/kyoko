@@ -73,4 +73,4 @@ if __name__ == "__main__":
 
     load_dotenv('.env')
     slack = slackweb.Slack(url=os.environ.get('SLACK_URL'))
-    slack.notify(text=speech, username=u'五十嵐響子', icon_url='https://raw.githubusercontent.com/megane42/kyoko/master/kyoko.jpg')
+    slack.notify(text=speech)
