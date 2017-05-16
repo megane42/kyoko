@@ -33,7 +33,7 @@
 ## Author
 * megane42
     * https://github.com/megane42
-    * https://twitter.com/tsdnm
+    * https://twitter.com/megane42
 
 ## License
 * MIT
